@@ -48,24 +48,7 @@
                             <div class="invalid-feedback" v-if="errors.listingPrice">{{ errors.listingPrice }}</div>
                         </div>
                     </div>
-                    <div class="admin-content__form-divided">
-                        <div class="mb-16">
-                            <h3 class="admin-content__form-text">Số lượng trên cửa hàng</h3>
-                            <div class="valid-elm input-group">
-                                <input type="number" class="fs-16 form-control" placeholder="" v-model="beverage.quantity"
-                                v-bind:class="{'is-invalid': errors.quantity}" @blur="validate()">
-                                <div class="invalid-feedback" v-if="errors.quantity">{{ errors.quantity }}</div>
-                            </div>
-                        </div>
-                        <div class="mb-16">
-                            <h3 class="admin-content__form-text">Số lượng tồn kho</h3>
-                            <div class="valid-elm input-group">
-                                <input type="number" class="fs-16 form-control" placeholder="" v-model="beverage.inventoryQuantity"
-                                v-bind:class="{'is-invalid': errors.inventoryQuantity}" @blur="validate()">
-                                <div class="invalid-feedback" v-if="errors.inventoryQuantity">{{ errors.inventoryQuantity }}</div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="mb-16">
                         <h3 class="admin-content__form-text">Trạng thái</h3>
                         <select class="valid-elm form-select" v-model="beverage.status">
